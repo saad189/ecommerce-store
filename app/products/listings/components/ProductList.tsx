@@ -1,5 +1,5 @@
 import React from 'react'
-import { Product } from '../../common/interfaces/product';
+import { Product } from '../../../common/interfaces/product';
 import ProductItem from './ProductItem';
 import styles from './ProductList.module.css';
 
@@ -15,7 +15,7 @@ const ProductList = async () => {
         productList = await response.json();
 
     } catch (error: any) {
-        console.log('Error Fetching Product', error.message)
+        console.log('Error Fetching Product List', error.message)
     } finally {
         loading = false;
     }

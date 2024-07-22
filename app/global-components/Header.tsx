@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
-                <Link href="/">
+                <Link href="/" className={styles.image}>
                     <img src="/store-logo.png" alt="Logo" />
                 </Link>
             </div>
@@ -17,20 +17,16 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/shop">
+                        <Link href="/products/listings">
                             Shop
                         </Link>
                     </li>
-                    <li>
-                        <Link href="/about">
-                            About
-                        </Link>
-                    </li>
+
                 </ul>
             </nav>
             <div className={styles.cart}>
                 <Link href="/cart">
-                    <img src="/store-logo.png" alt="Cart" />
+                    <img src="/cart.png" alt="Cart" />
                     <span className={styles.cartCount}>0</span>
 
                 </Link>

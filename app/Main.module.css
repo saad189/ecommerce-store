@@ -1,0 +1,36 @@
+.homeContainer {
+  padding: 1rem;
+}
+
+.bannerStyle {
+  background-color: rgb(57, 54, 43);
+  min-height: 10rem;
+  padding: 1rem;
+}
+
+.title {
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+}
+
+.subtitle {
+  font-size: large;
+  color: white;
+}
+
+.shoppingStyle {
+  background-color: #e57e3e;
+  padding: 1rem;
+  min-height: 60vh;
+}
+.shopLink {
+  color: white;
+  transition: 0.3s;
+  font-size: large;
+  font-weight: bold;
+}
+
+.shopLink:hover {
+  background-color: rgb(217, 94, 17);
+}

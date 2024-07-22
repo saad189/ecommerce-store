@@ -11,10 +11,16 @@
   border-radius: 0.5rem;
 }
 
-.logo img {
-  max-height: 50px;
+.image {
+  object-fit: fill;
+  border-radius: 50%;
+  height: 4rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgb(193, 225, 192);
+  background-color: white;
 }
-
 .nav ul {
   display: flex;
   list-style: none;
