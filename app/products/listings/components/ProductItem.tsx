@@ -18,9 +18,9 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
           <h2 className={styles.title}>{product.title}</h2>
           <p className={styles.price}>${product.price}</p>
         </div>
-        <div className={styles.descriptionContainer} >
+        {/* <div className={styles.descriptionContainer} >
           <div className={styles.description}>{product.description}</div>
-        </div>
+        </div> */}
 
 
         <div className={styles.imageContainer}>
@@ -28,7 +28,6 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
         </div>
         <div className={styles.footer}>
           <p className={styles.rating}>Rating: {product.rating.rate} / 5</p>
-          <button className={styles.addButton}>Add to Cart</button>
         </div>
       </div>
     </Link>

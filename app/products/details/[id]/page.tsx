@@ -1,5 +1,10 @@
+'use client'
 import { Product } from '@/app/common/interfaces/product';
 import styles from './DetailsPage.module.css';
+import { CartItem } from '@/app/common/interfaces/cart';
+import { useTransition } from 'react';
+import { addItemToCart } from '@/app/hooks/useCart';
+
 
 async function fetchProduct(id: string): Promise<Product> {
     let loading = false;
@@ -19,15 +24,22 @@ async function fetchProduct(id: string): Promise<Product> {
 }
 
 export default async function DetailsPage({ params }: { params: { id: string } }) {
+    let [_, startTransition] = useTransition();
     const product = await fetchProduct(params.id);
+    const cartItem: CartItem = { id: product.id, title: product.title, price: product.price, image: product.image, quantity: 1 };
 
     return (
         <div className={styles.productDetailsContainer}>
-            <h1 className={styles.title}>{product.title}</h1>
-            <p className={styles.price}>${product.price}</p>
-            <div className={styles.description}>{product.description}</div>
+
             <img src={product.image} alt={product.title} className={styles.image} />
-            <p className={styles.rating}>Rating: {product.rating.rate} / 5</p>
+
+            <div className={styles.title}>{product.title}</div>
+            <div className={styles.price}>${product.price}</div>
+            <div className={styles.rating}>Rating: {product.rating.rate} / 5</div>
+            <button onClick={() => addItemToCart(cartItem)} className={styles.addButton}>Add to Cart</button>
+
+            <div className={styles.description}>{product.description}</div>
+
         </div>
     );
 }

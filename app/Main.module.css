@@ -25,10 +25,15 @@
   min-height: 60vh;
 }
 .shopLink {
+  display: flex;
   color: white;
   transition: 0.3s;
   font-size: large;
   font-weight: bold;
+  height: 4rem;
+  align-items: center;
+  width: fit-content;
+  padding: 1rem;
 }
 
 .shopLink:hover {

@@ -78,23 +78,7 @@
 }
 
 .rating {
-  font-size: 1rem;
+  font-size: large;
   color: black;
-}
-
-.addButton {
-  background-color: #e57e3e;
-  color: white;
-  border-radius: 2rem;
-  padding: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 10rem;
-
-  transition: 0.3s;
-}
-
-.addButton:hover {
-  background-color: rgb(217, 94, 17);
   font-weight: bold;
 }

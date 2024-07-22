@@ -1,7 +1,11 @@
+'use client'
 import Link from 'next/link';
-import React from 'react'
+import React, { useTransition } from 'react'
 import styles from './Header.module.css';
+import { getCartItems } from '../hooks/useCart';
 const Header = () => {
+    let [_, startTransition] = useTransition();
+    let cartItems = getCartItems();
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
@@ -27,7 +31,7 @@ const Header = () => {
             <div className={styles.cart}>
                 <Link href="/cart">
                     <img src="/cart.png" alt="Cart" />
-                    <span className={styles.cartCount}>0</span>
+                    <span className={styles.cartCount}>{cartItems.length}</span>
 
                 </Link>
             </div>
