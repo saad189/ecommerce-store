@@ -24,7 +24,7 @@ const ProductList = async () => {
 
 
     return (
-        <div><h1>Product List:</h1>
+        <div>
             <ul className={styles.listContainer}>
                 {productList.map(item =>
                     <ProductItem key={item.id} product={item}></ProductItem>
