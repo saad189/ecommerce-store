@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styles from './Main.module.css';
 
-
 export default function Home() {
   return (
     <main className={styles.homeContainer}>
@@ -11,8 +10,7 @@ export default function Home() {
       </section>
 
       <section className={styles.shoppingStyle}>
-        <h1 className={styles.title}>Let's Start Shopping!
-        </h1>
+        <h1 className={styles.title}>Let&apos;s Start Shopping!</h1>
         <div className={styles.shopLink}>
           <Link href='/products/listings'>
             Shop Now!

@@ -12,7 +12,7 @@ const CartPage = () => {
             <div>Cart</div>
 
             {cartItems.map(item => (
-                <div>
+                <div key={item.id}>
 
 
                     <div>
