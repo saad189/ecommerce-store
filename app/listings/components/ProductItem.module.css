@@ -1,0 +1,100 @@
+.productContainerCard {
+  width: 25rem;
+  height: 35rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+
+  margin: 2rem;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.productContainerCard:hover {
+  transform: scale(1.1);
+}
+
+.header {
+  background-color: #ff934f;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  flex: 0.9;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.descriptionContainer {
+  padding: 0.5rem;
+}
+.description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.imageContainer {
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.image {
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+}
+
+.footer {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  font-size: 1rem;
+  color: black;
+}
+
+.addButton {
+  background-color: #e57e3e;
+  color: white;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 10rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addButton:hover {
+  background-color: rgb(217, 94, 17);
+  font-weight: bold;
+}
